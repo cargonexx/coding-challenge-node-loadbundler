@@ -18,8 +18,7 @@ This contains random partial truck loads:
 ```json
   {
      "destination": "Köln",   // Destination
-     "pieces": 3,  // Number of euro palettes that need to go to the destination for this load
-     "splitable": true,  // if this load can be split into further partials 
+     "pallets": 3,  // Number of euro palettes that need to go to the destination for this load
      "loading_window": {    // time frame during which the load must be picked up at the central warehouse
         "start": "2021-03-29T21:46:06.074Z",
         "end": "2021-03-29T23:46:06.074Z"
@@ -31,7 +30,7 @@ This contains random partial truck loads:
   },
 ```
 
-#### bundleable-destinations.json
+#### destinations-constraints.json
 This contains a list of destinations that may be combined.
 
 ```json
@@ -50,12 +49,11 @@ Feel free to use whatever output format you want.  This here is just an example 
 
 ```json
    {
-      "total_pieces": 31,
-      "partials": [
+      "total_pallets": 31,
+      "loads": [
          {
             "destination": "Luebeck",
-            "pieces": 26,
-            "splitable": true,
+            "pallets": 26,
             "loading_window": {
                "start": "2021-03-29T22:06:12.974Z",
                "end": "2021-03-30T00:06:12.974Z"
@@ -67,8 +65,7 @@ Feel free to use whatever output format you want.  This here is just an example 
          },
          {
             "destination": "Wedel",
-            "pieces": 5,
-            "splitable": true,
+            "pallets": 5,
             "loading_window": {
                "start": "2021-03-30T18:03:41.575Z",
                "end": "2021-03-30T20:03:41.575Z"
@@ -90,5 +87,3 @@ Feel free to use whatever output format you want.  This here is just an example 
 
 - feel free to start with ignoring the time
 - feel free to imageine the time it takes between any drop-off location is 0 (or a standard value you define)
-- feel free to start without splitting individual loads
-

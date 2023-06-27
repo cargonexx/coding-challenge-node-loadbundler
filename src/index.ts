@@ -8,12 +8,11 @@ console.log("Trucks:");
 
 /*
    {
-      "total_pieces": 31,
-      "partials": [
+      "total_pallets": 31,
+      "loads": [
          {
             "destination": "Luebeck",
-            "pieces": 26,
-            "splitable": true,
+            "pallets": 26,
             "loading_window": {
                "start": "2021-03-29T22:06:12.974Z",
                "end": "2021-03-30T00:06:12.974Z"
@@ -25,8 +24,7 @@ console.log("Trucks:");
          },
          {
             "destination": "Wedel",
-            "pieces": 5,
-            "splitable": true,
+            "pallets": 5,
             "loading_window": {
                "start": "2021-03-30T18:03:41.575Z",
                "end": "2021-03-30T20:03:41.575Z"
